@@ -1,0 +1,414 @@
+@font-face {
+  font-family: 'Inter';
+  src: url("font/Inter-Regular.ttf") format('ttf'),
+}
+
+.main_header {
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+  height: 15.5%;
+}
+
+.login_header {
+  background-size: auto;
+  height: 120px;
+  border-radius: 0px 0px 0px 0px;
+  width: 100%;
+}
+
+#logo img {
+  position:absolute;
+  height: 100px;
+  width: 130px;
+  background-size: cover;
+  position: absolute;
+  align-items: center;
+  top: 20%;
+  left: 45%;
+  /*margin-right:45%;
+  margin-left:45%;*/
+}
+
+#NomPrenom {
+  color:white;
+  top: 35%;
+  left: 85%;
+}
+
+
+/********************************************************************************
+ *************************** * * * *MENU* * * * *********************************
+ ********************************************************************************/
+.GSB_menu {
+  position: fixed;
+  width: 17%;
+  height: 100%;
+  background-color: #e6e6e6;
+  border-width: 2px;
+  overflow-y: auto;
+  top: 15.5%;
+  left: 0;
+  border-right: solid rgba(0, 0, 0, 0.5);
+  border-width: 1px;
+}
+
+
+.menu a {
+  background-color: #e6e6e6;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #ccc;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.menu p.enabled {
+  padding: 12px;
+  color: white;
+  text-align: center;
+  background-color: #6F95AD;
+
+}
+
+.disconnect {
+  position: fixed;
+  width: 17%;
+  height: 100%;
+  background-color:#6F95AD;
+  border-width: 2px;
+  overflow-y: auto;
+  top: 85%;
+  left: 0;
+  border-radius: 0 35px 0 0;
+  color: white;
+}
+
+.disconnect a {
+  padding: 12px;
+  display: block;
+  text-decoration: underline;
+  color: white;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.disconnect a:hover {
+  background-color:#6e8da1
+}
+
+.active {
+  background-color: #e6e6e6;
+}
+
+.disconnect .icon-logout {
+   position: absolute;
+   filter: invert(1);
+   left: 20%;
+   top: 5%;
+}
+
+.disconnect p#logout {
+  position: absolute;
+  left:37.5%;
+  top: 4%;
+}
+
+/********************************************************************************
+ *************************** * * * *BODY* * * * *********************************
+ ********************************************************************************/
+
+body {
+  height: 100%;
+  background: url("images/GSB_background_general.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: auto;
+  font-family: 'Inter', sans-serif;
+  flex-direction: column;
+  display: flex;
+}
+
+body.login {
+  background:url("images/GSB_background_LOGIN.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin:auto;
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+.GSB_body {
+  min-width: 450px;
+  position: absolute;
+  left: 17.01%;
+  right: 0%;
+  background-color: #F0F0F0;
+  opacity: 0.95;
+  top: 15.5%;
+  bottom: 0;
+  overflow-y: auto;
+  opacity: 0.8;
+}
+
+
+/********************************************************************************
+ ************************** * * * *LOGIN* * * * *********************************
+ ********************************************************************************/
+
+#connexion {
+  position: absolute;
+  background-color: #BED3E3;
+  left: 3%;
+    right: 60%;
+    top: 7.5%;
+    bottom: 15%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-style: solid;
+    border-color:black;
+    box-shadow: 5px 5px 10px #bdbebf;
+    border-collapse: separate;
+    min-width: 400px;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.connexion_body {
+  min-width: 450px;
+  position: absolute;
+  padding-bottom: 5%;
+  left: 10%;
+  right: 10%;
+  bottom: 3%;
+  top: 14%;
+  background-color: #f5f4f2;
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border: solid;
+  border-width: 1px;
+  border-color:black;
+  border-collapse: separate;
+}
+
+/********************************************************************************
+ ************************ * * * * BUTTONS * * * * *******************************
+ ********************************************************************************/
+
+input, button, a {
+  transition-duration: 0.7s;
+}
+
+#connexion input[type=submit] {
+  background-color: #6F95AD;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  font-size: 1.2rem;
+  min-width: 490px;
+}
+
+input[type=reset] {
+  background-color: #6F95AD;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  font-size: 1.2rem;
+  min-width: 350px;
+}
+
+#connexion input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #5d7f94;
+}
+
+#connexion h1{
+  text-align:center;
+}
+
+
+#connexion input[type=text] {
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  background-size: 7%;
+}
+
+#connexion input[type=password]{
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  background-size: 7%;
+}
+
+
+
+#connexion input[type=text], input[type=password]{
+  color: #000000;
+  padding: 8px 100px;
+  max-width: 400px;
+  max-width: 490px;
+  font-size: 1.6rem;
+  left: 10%;
+}
+
+#connexion input[type=text]::placeholder, input[type=password]::placeholder{
+  opacity: 0.5;
+  text-size-adjust: 10%;
+}
+
+
+
+#envoie {
+  background-color: #6F95AD;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  font-size: 1.2rem;
+  min-width: 350px;
+}
+
+#envoie:hover {
+  background-color: #5d7f94;
+}
+
+#envoie {
+  position: absolute;
+  left: 25%;
+  bottom: 12.5%;
+}
+
+#annule {
+  position: absolute;
+  bottom: 12.5%;
+  left: 50%;
+}
+
+#rapBilan {
+  border-radius: 10px 10px 10px 10px;
+  align-self: center;
+  min-width: 400px;
+  max-width: 500px;
+  min-height: 100px;
+  max-height: 120px;
+  left: 10%;
+}
+
+/********************************************************************************
+ ************************* * * * * MISC * * * * *********************************
+ ********************************************************************************/
+
+#emblem {
+  background-image: url("images/GSB_IMG_emblem.png");
+  min-height: 220.5px;
+  min-width: 220.5px;
+  max-height: 441px;
+  max-width: 441px;
+  height: 441px;
+  width: 441px;
+  background-size: cover;
+  position: absolute;
+  align-items: center;
+  right: 50%;
+  left: 59.5%;
+  top: 20%;
+  bottom: 45%;
+}
+
+#connexion .icon-ident {
+   position: absolute;
+   left: 15%;
+   top: 27.5%;
+}
+
+#connexion .icon-psswd {
+   position: absolute;
+   left: 15%;
+   top: 37.5%;
+}
+
+.legende {
+  background-color: #222;
+  color: #fff;
+  padding: 3px 6px;
+  border-radius: 10px 10px 10px 10px;  
+}
+
+fieldset {
+  background-color:#CCC;
+  max-width:500px;
+  padding:16px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+select {
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+}
+
+select:hover {
+  background-color: #f1f1f1;
+  transition-duration: 0.7s;
+}
+
+#praticien, #medicament1, #medicament2, #echantillon1, #echantillon2 {
+  font-weight: bold;
+}
+
+#infPerso, #infClass {
+  position: absolute;
+  left: 27.5%;
+}
+
+#infPerso.separateur {
+  position: absolute;
+ min-width: 500px; 
+}
+
+#infClass {
+  top: 43.5%;
+}
+
+#selection {
+  position: absolute;
+  left: 27%;
+  top: 32.5%;
+  border-spacing: 15px;
+}
+
+
+input[type="radio"] {
+  /*display: none;*/  
+}
+
+label.star {
+  display: block;
+  position: absolute;
+  top: 3%;
+  width: 20px;
+  height: 20px;
+  
+  background: url('images/star-regular.svg') no-repeat;
+}
+input[type="radio"]:checked ~ label.star {
+  background: url('images/star-solid.svg') no-repeat;
+}
