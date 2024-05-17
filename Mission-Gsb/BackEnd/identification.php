@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 
 <?php
-	session_save_path("session");
+	session_save_path("/var/www/html/gsb/BackEnd/session");
   session_start();
 ?>
 

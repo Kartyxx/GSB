@@ -19,7 +19,8 @@
   		</p><br>
   		<p align="center">
   			<a href="index.php?isDisconnected" name="disconnected">Deconnexion</a></p>
-  				<?php;
+  				
+				<?php
   				if (isset($_POST['isDisconnected'])) {
   					session_destroy(); 
   				}

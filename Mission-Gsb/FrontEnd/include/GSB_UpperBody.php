@@ -1,5 +1,5 @@
 <?php
-	session_save_path("../BackEnd/session");
+	session_save_path("/var/www/html/gsb/BackEnd/session");
   session_start();
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"

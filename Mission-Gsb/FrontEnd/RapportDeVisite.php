@@ -158,8 +158,7 @@
 
     <?php
     for ($i = 1; $i <= 5; $i++) {
-      echo '<input type="radio" id="note' . $i . '" name="note" value="' . $i . '">
-            <label class="star" for="note' .$i. '"></label>';
+      echo '<input type="radio" id="note' . $i . '" name="note" value="' . $i . '">'; 
       //echo ' <label for="note' . $i . '">' . $i . '</label>';
     }
     ?>
